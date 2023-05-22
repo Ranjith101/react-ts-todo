@@ -1,0 +1,56 @@
+tutorial
+  //Assigning of data types
+ let name:string;
+ let age : number | string; //both string and number its union operator
+ let isStudent: boolean;
+ let hobbies: string[]; //Array of stringd
+ let role: [number, string]; //doubles
+ 
+ let acceptAnyType : any;  //acceptAnyType
+
+ let unknownType: unknown //if type is unknown its also same as any but instead of any we can use unknown
+
+
+ //Object
+
+//  type Person ={
+//   name:string,
+//   // age:number //compulsory age need to be present
+//   age ?: number //optional age
+//  }
+
+//  let person: Person ={
+//   name:'Ranjith'
+//  };
+
+//  //many object in array 
+
+//  let lotOfPersons : Person[];
+
+
+//functional arguments type also need to be defined
+
+// const printName =(name:string) =>{
+//   console.log(name)
+// }
+
+// printName("Ranjith")
+
+// in interface its easy to add on another other whereas in type its some what complex
+
+interface Person {
+  name:string,
+  age ?: number //optional age
+ }
+
+ interface Guy extends Person {
+  profession:string
+ }
+
+ let guy : Guy ={
+  name:'Ranjith',
+  age:55,
+  profession:"Doctor"
+ }
+
+
